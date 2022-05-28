@@ -1,0 +1,32 @@
+<html>
+<head>
+
+<title> 숫자를 맞춰보라~ </title>
+</head>
+<body>
+
+<h1> 숫자  </h1>
+<script>
+
+answer= Math.floor(Math.random()*100)
+//alert(answer)
+mytry = 1
+myanswer=-1
+while(answer != myanswer){
+myanswer = Number (prompt ("숫자입력"))
+alert (myanswer)
+if ( myanswer == answer){
+alert ("축하" + mytry + "번째에 맞췃당")
+break  
+    }
+if (myanswer > answer) alert("down")
+if (myanswer < answer) alert ("up")
+mytry++
+}
+document.write ("답은" + answer + "였다. 너는" + mytry + "번째에 맞춘")
+</script>
+</body>
+</html>
+
+
+
